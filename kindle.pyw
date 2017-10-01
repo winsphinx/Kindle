@@ -1,10 +1,8 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-
 """
 This is a ...
 """
-
 
 from __future__ import unicode_literals
 import os
@@ -37,23 +35,35 @@ def del_path(path):
     result = ''
     try:
         total = os.listdir(path)
-        files = [os.path.normcase(i) for i in total
-                 if os.path.isfile(os.path.join(path, i))]
-        dirs = [os.path.normcase(i) for i in total
-                if os.path.isdir(os.path.join(path, i))]
-        removes = [i for i in dirs
-                   if i not in [re.sub(r'\.\w+$', '.sdr', j) for j in files]]
+        files = [
+            os.path.normcase(i) for i in total
+            if os.path.isfile(os.path.join(path, i))
+        ]
+        dirs = [
+            os.path.normcase(i) for i in total
+            if os.path.isdir(os.path.join(path, i))
+        ]
+        removes = [
+            i for i in dirs
+            if i not in [re.sub(r'\.\w+$', '.sdr', j) for j in files]
+        ]
         for i in removes:
-            if i != 'dictionaries' and i !='updates':
+            if i != 'dictionaries' and i != 'updates':
                 shutil.rmtree(path + i)
                 result += ('Deleting %s%s\n' % (path, i))
-        result += ('%s directories deleted.\n\n'
-                   % (("dictionaries" in removes)
-                      and str((len(removes) - 1))
-                      or str(len(removes))))
+        result += ('%s directories deleted.\n\n' % count(removes))
         return result
     except WindowsError:
         return path
+
+
+def count(obj):
+    n = len(obj)
+    if "dictionaries" in obj:
+        n -= 1
+    if "updates" in obj:
+        n -= 1
+    return n
 
 
 def show_clip(path):
