@@ -13,11 +13,11 @@ install:
 before_build:
 
 build_script:
-  - python -m PyInstaller -w kindle.pyw
+  - python -m PyInstaller -F -w kindle.pyw
 
 after_build:
   - ps: cd dist\
-  - ps: 7z a ..\kindle.zip kindle\*
+  - ps: 7z a ..\kindle.zip kindle.exe
 
 artifacts:
   - path: kindle.zip
