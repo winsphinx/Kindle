@@ -13,7 +13,7 @@ install:
 before_build:
 
 build_script:
-  - python -m PyInstaller -F -w kindle.pyw
+  - python -m PyInstaller -w kindle.pyw
 
 after_build:
   - ps: cd dist\
