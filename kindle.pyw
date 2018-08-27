@@ -1,15 +1,16 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 This is a ...
 """
 
 from __future__ import unicode_literals
+import codecs
 import os
 import re
 import sys
 import shutil
-import Tkinter as T
+import tkinter as T
 
 
 def get_path():
@@ -69,7 +70,7 @@ def count(obj):
 def show_clip(path):
     """ Show clipper """
     try:
-        f = open(os.path.join(path, 'My Clippings.txt'))
+        f = codecs.open((os.path.join(path, 'My Clippings.txt')), 'r', 'utf-8')
         t = f.readlines()
         f.close()
     except IOError:
@@ -82,7 +83,7 @@ def format_text(text):
     """ Foramt text """
     string = ''
     for i in text:
-        string += i.decode('utf8')
+        string += i
     return string
 
 

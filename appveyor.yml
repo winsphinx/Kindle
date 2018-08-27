@@ -3,17 +3,17 @@ skip_tags: true
 
 environment:
   matrix:
-    - PYTHON: "C:\Python27"
-      PYTHON_VERSION: "2.7.x"
+    - PYTHON: "C:\Python37"
+      PYTHON_VERSION: "3.7.x"
       PYTHON_ARCH: "32"
 
 install:
-  - pip install -U PyInstaller
+  - cmd: c:\Python37\Scripts\pip install -U PyInstaller
 
 before_build:
 
 build_script:
-  - python -m PyInstaller -F -w kindle.pyw
+  - cmd: c:\Python37\python -m PyInstaller -F -w kindle.pyw
 
 after_build:
   - ps: cd dist\
