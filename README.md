@@ -3,16 +3,17 @@
 # Kindle
 
 ## Connect Kindle to PC through USB, then:
-- Clean junk files
-- View notes
-- and more others TBC...
+
+- [X] Clean junk files (SDR directories)
+- [X] View notes
+- [ ] Others
 
 ## Tested on:
-- Windows 7
-- Python 2.7 w/ tkinter
-- KPW 2 & 3
 
-## Todo:
-- Too many...
+- [X] Python 2.7 w/ tkinter
+- [X] Python 3.7 w/ tkinter
+- [X] Windows 7 / 10
+- [X] Linux ArchLinux / manjaro
+- [X] KPW 2 / 3
 
 [Download](https://github.com/winsphinx/Kindle/releases)
