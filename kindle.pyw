@@ -5,11 +5,12 @@ This is a ...
 """
 
 from __future__ import unicode_literals
+
 import codecs
 import os
 import re
-import sys
 import shutil
+import sys
 import tkinter as T
 
 
@@ -89,7 +90,6 @@ def format_text(text):
 
 class Kindle(object):
     """ Docstring for Kindle Frame Class """
-
     def __init__(self):
         """ Init """
         self.root = T.Tk()
