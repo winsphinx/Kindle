@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/o4upp7sm7bsui2kb?svg=true)](https://ci.appveyor.com/project/winsphinx/kindle)
+[![Python application](https://github.com/winsphinx/Kindle/actions/workflows/python-app.yml/badge.svg)](https://github.com/winsphinx/Kindle/actions/workflows/python-app.yml)
 
 # Kindle
 
