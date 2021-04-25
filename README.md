@@ -2,18 +2,22 @@
 
 # Kindle
 
-## Connect Kindle to PC through USB, then:
+## Usage
+Connect Kindle to PC through USB, then:
 
 - [X] Clean junk files (SDR directories)
 - [X] View notes
 - [ ] Others
 
-## Tested on:
+## Environment
+Can run on:
 
-- [X] Python 2.7 w/ tkinter
-- [X] Python 3.7 w/ tkinter
+- [X] Python 2.x w/ tkinter
+- [X] Python 3.x w/ tkinter
 - [X] Windows 7 / 10
 - [X] Linux ArchLinux / manjaro
 - [X] KPW 2 / 3
 
-[Download](https://github.com/winsphinx/Kindle/releases)
+## Download
+
+[![GitHub all releases](https://img.shields.io/github/downloads/winsphinx/Kindle/total)](https://github.com/winsphinx/Kindle/releases/download/latest/Kindle.exe)
