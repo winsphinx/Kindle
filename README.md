@@ -20,4 +20,4 @@ Can run on:
 
 ## Download
 
-[![GitHub all releases](https://img.shields.io/github/downloads/winsphinx/Kindle/total)](https://github.com/winsphinx/Kindle/releases/download/latest/Kindle.exe)
+[![GitHub all releases](https://img.shields.io/github/downloads/winsphinx/Kindle/total)](https://github.com/winsphinx/Kindle/releases/download/latest/Kindle.zip)
