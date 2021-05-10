@@ -10,12 +10,11 @@ Connect Kindle to PC through USB, then:
 - [ ] Others
 
 ## Environment
-Can run on:
+Tested on:
 
 - [X] Python 2.x w/ tkinter
 - [X] Python 3.x w/ tkinter
 - [X] Windows 7 / 10
-- [X] Linux ArchLinux / manjaro
 - [X] KPW 2 / 3
 
 ## Download
