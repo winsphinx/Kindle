@@ -1,11 +1,12 @@
-
-name: Build application
+name: Build windows app
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   build:

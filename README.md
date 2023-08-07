@@ -1,4 +1,4 @@
-[![Build application](https://github.com/winsphinx/Kindle/actions/workflows/build-app.yml/badge.svg)](https://github.com/winsphinx/Kindle/actions/workflows/build-app.yml)
+[![Build status](https://github.com/winsphinx/Kindle/actions/workflows/build.yml/badge.svg)](https://github.com/winsphinx/Kindle/actions/workflows/build.yml)
 
 # Kindle
 
